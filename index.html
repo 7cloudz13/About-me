@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A little about me — who I am, what I love, and where I'm headed." />
+    <title>About Me — Benaiah Dodoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="dot-background" aria-hidden="true"></div>
+
+    <button
+      type="button"
+      id="theme-toggle"
+      class="theme-toggle"
+      aria-label="Switch color theme"
+    >
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+    </button>
+
+    <main class="page">
+      <div class="container">
+        <article class="hub-card">
+          <header class="hero fade-in">
+            <div class="avatar">
+              <img
+                src="assets/images/profile.svg"
+                alt="Benaiah Dodoo"
+                width="80"
+                height="80"
+              />
+            </div>
+            <div class="hero-text">
+              <h1>Benaiah Dodoo</h1>
+              <p class="role">25 &middot; Houston &middot; Software Engineer</p>
+              <p class="bio">Obsessed with these moving pieces of metal we call cars.</p>
+            </div>
+          </header>
+
+          <section class="section fade-in" aria-labelledby="about-heading">
+            <div class="section-heading">
+              <h2 id="about-heading">About Me</h2>
+            </div>
+            <div class="about-card">
+              <p>
+                Hey, I'm Benaiah. I live in Texas alone with a dog named mufasa.
+                I wake up early to tend to my clients needs as a freelancer everyday
+                while taking care of myself and helping my family. 
+
+                
+              </p>
+              <p>
+                I am a passionate car enthusiast with a deep fascination for automobiles.
+                From classic legends to modern icons, i enfoy learning engineering,
+                and history. Whether exploring the latest automotive innovations or 
+                discovering underrated gems, my love for cars continues to fuel my 
+                curiosity and inspire me everyday.S
+              </p>
+              
+              
+            </div>
+          </section>
+
+          <section class="section fade-in" aria-labelledby="favorites-heading">
+            <div class="section-heading">
+              <h2 id="favorites-heading">A Few Things About Me</h2>
+            </div>
+            <dl class="info-grid">
+              <div class="info-item">
+                <dt>Favorite food</dt>
+                <dd>A well seasoned medium rare steak</dd>
+              </div>
+              <div class="info-item">
+                <dt>Favorite sport</dt>
+                <dd>Formula 1 - The drama the contreversy and the glory.</dd>
+              </div>
+              <div class="info-item">
+                <dt>What I love doing</dt>
+                <dd>gaming, gaming, doomscrolling.</dd>
+              </div>
+              <div class="info-item">
+                <dt>Favorite book</dt>
+                <dd><em>God of War</em> - I read it twice.</dd>
+              </div>
+              <div class="info-item">
+                <dt>Favorite band</dt>
+                <dd>Linkin Park - Sparked my love for the genre.</dd>
+              </div>
+              <div class="info-item">
+                <dt>Dream job</dt>
+                <dd>Racing driver - Very unrealistic, I know.</dd>
+              </div>
+              <div class="info-item">
+                <dt>Dream school</dt>
+                <dd>Oxford University. I've had the brochure saved on my phone for a year.</dd>
+              </div>
+              <div class="info-item">
+                <dt>Fun fact</dt>
+                <dd>I don't like it when people call me instead of texting - Is that wierd.</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section class="section fade-in" aria-labelledby="dreams-heading">
+            <div class="section-heading">
+              <h2 id="dreams-heading">Where I'm Headed</h2>
+            </div>
+            <div class="about-card">
+              <p>
+                Right now I'm focused on passing my WASSCE and getting into a good university.
+                I know the road is not easy - fees, pressure, everyone asking what you want to
+                do with your life - but I believe hard work pays. My mum always says,
+                <em>"Slowly slowly, the bird builds its nest."</em>
+              </p>
+              <p>
+                One day I want to achieve my said dream if it's even possible. Be the best the ever was
+              </p>
+            </div>
+          </section>
+
+          <footer class="site-footer fade-in">
+            <p class="tagline">Still moving foward.</p>
+            <p class="copyright">&copy; 2026 Benaiah Dodoo</p>
+          </footer>
+        </article>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
